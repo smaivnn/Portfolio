@@ -1,0 +1,144 @@
+.container {
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    padding-bottom: 77px;
+}
+
+header{
+    width: 100%;
+    height: 400px;
+    /* background-color: rgb(93, 93, 93); */
+    background-image: url('../img/background_1.jpg');
+    background-size: cover;
+    padding-top: 100px;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+nav div {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav .right-tab {
+    font-size: 0.7em;
+}
+
+nav .right-tab a {
+    padding: 0 0.5em;
+}
+
+header .bg-div {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    /* margin-top: 50px; */
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+header .bg-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .greetingBox {
+    margin-top: 20px;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+}
+
+header .greeting {
+    font-size: 24px;
+}
+
+header .introduce {
+    font-size: 18px;
+}
+
+header .contactBox {
+    margin-top: 77px;
+    font-size: 15px;
+}
+
+header .contactBtn {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+
+section .about {
+    background-color: blanchedalmond;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 77px;
+}
+
+section .about .about-head {
+    font-size: 2em;
+    padding : 2em 0 1em 0;
+}
+
+section .about .about-body {
+    line-height: 1.5em;
+}
+
+.skills {
+    margin: 0 auto;
+    background-color: burlywood;
+}
+
+.skills .skills-head {
+    font-size: 2em;
+    padding : 2em 0 1em 0;
+}
+
+.skills .skills-body {
+    width: 77%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.skills .skillsBox {
+    width: 17em;
+    border: 1px solid black;
+    display: block;
+    border-radius: 5%;
+    margin: 0 0 2em 0;
+}
+
+.skills .skillsBox .skillsContent{
+    margin: 1em 0;
+}
+
+.skills .skillsBox h2 {
+    width: 77%;
+    margin: 0 auto;
+    padding: 7px 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #000;
+}
+
+.skills .skillsBox hr {
+    width: 77%;
+    border: black 1px solid;
+}
