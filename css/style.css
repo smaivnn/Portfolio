@@ -1,3 +1,7 @@
+body {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
 .container {
     text-align: center;
     align-items: center;
@@ -16,27 +20,35 @@ header{
 
 nav {
     position: fixed;
-    top: 10px;
+    top: 0;
     left: 0;
     right: 0;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
     font-size: 24px;
     color: rgb(255, 255, 255);
 }
 
-nav div {
+nav .navBox {
+    width: 90%;
+    height: 1.5em;
+    margin: 0 auto;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBox .tab {
     display: inline-block;
 }
 
-nav .right-tab {
+nav .right {
     font-size: 0.7em;
+    margin-top: 0.5em;
 }
 
-nav .right-tab a {
+nav .right a {
     padding: 0 0.5em;
 }
 
@@ -83,31 +95,28 @@ header .contactBtn {
     padding: 5px 10px;
 }
 
+.title {
+    font-size: 3em;
+    padding : 2em 0 1em 0;
+    font-family: 'Staatliches', cursive;
+}
+
 section .about {
-    background-color: blanchedalmond;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 77px;
 }
 
-section .about .about-head {
-    font-size: 2em;
-    padding : 2em 0 1em 0;
-}
-
 section .about .about-body {
-    line-height: 1.5em;
+    line-height: 2em;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 .skills {
     margin: 0 auto;
-    background-color: burlywood;
+    background-color: lightgoldenrodyellow;
 }
 
-.skills .skills-head {
-    font-size: 2em;
-    padding : 2em 0 1em 0;
-}
 
 .skills .skills-body {
     width: 77%;
@@ -134,11 +143,31 @@ section .about .about-body {
     width: 77%;
     margin: 0 auto;
     padding: 7px 0;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: 'Staatliches', cursive;
     border-bottom: 1px solid #000;
 }
 
-.skills .skillsBox hr {
-    width: 77%;
-    border: black 1px solid;
+.works .works-body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-around;
+    justify-content: space-around;
 }
+
+.works .works-body .worksBox {
+    width: 18em;
+    padding: 10px;
+    border: 1px solid black;
+    display: block;
+    border-radius: 5%;
+    margin: 0 0 2em 0;
+}
+
+.works .works-body .worksBox img {
+    width: 100%;
+    border-radius: 5%;
+}
+
