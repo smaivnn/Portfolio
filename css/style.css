@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Ubuntu', sans-serif; 
 }
@@ -12,8 +15,8 @@ body {
 header{
     width: 100%;
     height: 400px;
-    /* background-color: rgb(93, 93, 93); */
-    background-image: url('../img/background_1.jpg');
+    /* background-color: #464545; */
+    background-image: url('../img/background3.png');
     background-size: cover;
     padding-top: 100px;
 }
@@ -28,6 +31,7 @@ nav {
     opacity: 0.9;
     font-size: 24px;
     color: rgb(255, 255, 255);
+
 }
 
 nav .navBox {
@@ -50,9 +54,27 @@ nav .right {
 
 nav .right a {
     padding: 0 0.5em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-header .bg-div {
+nav .right a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+nav .right a:hover {
+    color: rgb(200, 0, 0);
+    text-decoration: none;
+}
+
+nav .right a:active {
+    color: rgb(200, 0, 0);
+    text-decoration: none;
+}
+
+#home .bg-div {
     width: 200px;
     height: 200px;
     margin: 0px auto;
@@ -61,33 +83,33 @@ header .bg-div {
     border: 2px solid rgb(255, 255, 255);
 }
 
-header .bg-img {
+#home .bg-img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-header .greetingBox {
+#home .greetingBox {
     margin-top: 20px;
     line-height: 35px;
     color: rgb(255, 255, 255);
 }
 
-header .greeting {
+#home .greeting {
     font-size: 24px;
 }
 
-header .introduce {
+#home .introduce {
     font-size: 18px;
 }
 
-header .contactBox {
+#home .contactBox {
     margin-top: 77px;
     font-size: 15px;
 }
 
-header .contactBtn {
+#home .contactBtn {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 5%;
     text-decoration: none;
@@ -101,24 +123,43 @@ header .contactBtn {
     font-family: 'Staatliches', cursive;
 }
 
-section .about {
+section #about {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 77px;
 }
 
-section .about .about-body {
+section #about .about-body {
     line-height: 2em;
     font-family: 'Do Hyeon', sans-serif;
 }
 
-.skills {
+#skills {
     margin: 0 auto;
-    background-color: lightgoldenrodyellow;
+    background-color: #EDECEA;
 }
 
+#skills .title {
+    padding-bottom: 0;
+}
 
-.skills .skills-body {
+#skills .lvBox {
+    font-size: 0.5em;
+    padding: 1.5em 0 1em 0;
+    height: 1.5em;
+}
+
+.lvBox span {
+    padding: 0 10px;
+    cursor: pointer;
+    transition: font-size 0.1s;
+}
+
+.lvBox span:hover{
+    font-size: 1.2em;
+}
+
+#skills .skills-body {
     width: 77%;
     margin: 0 auto;
     display: flex;
@@ -127,19 +168,31 @@ section .about .about-body {
     justify-content: space-around;
 }
 
-.skills .skillsBox {
+#skills .skillsBox {
     width: 17em;
-    border: 1px solid black;
+    border: 1px solid #C4BCB8;
     display: block;
     border-radius: 5%;
     margin: 0 0 2em 0;
+    background-color: #E2DFD8;
+    box-shadow: 5px 5px 5px 5px #C4BCB8;
 }
 
-.skills .skillsBox .skillsContent{
+.skillsBox .skillsContent{
     margin: 1em 0;
+    opacity: 0.5;
+    transition: opacity 0.3s;
 }
 
-.skills .skillsBox h2 {
+.skillsBox .skillsContent.showing {
+    opacity: 1;
+}
+
+.skillsContent .skillName{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.skillsBox h2 {
     width: 77%;
     margin: 0 auto;
     padding: 7px 0;
@@ -148,7 +201,11 @@ section .about .about-body {
     border-bottom: 1px solid #000;
 }
 
-.works .works-body {
+#works {
+    background-color: #CDD5D3;
+}
+
+#works .works-body {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -157,16 +214,17 @@ section .about .about-body {
     justify-content: space-around;
 }
 
-.works .works-body .worksBox {
+.works-body .worksBox {
     width: 18em;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #98A6A6;
     display: block;
     border-radius: 5%;
     margin: 0 0 2em 0;
+    box-shadow: 5px 5px 5px #6B7275;
 }
 
-.works .works-body .worksBox img {
+.works-body .worksBox img {
     width: 100%;
     border-radius: 5%;
 }

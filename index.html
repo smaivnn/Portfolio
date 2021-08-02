@@ -17,35 +17,35 @@
                 <a>Smaivnn</a>
             </div>
             <div class="right tab">
-                <a>Home</a>
-                <a>About</a>
-                <a>Skills</a>
-                <a>My works</a>
-                <a>Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#works">My works</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header class="container">
+    <header id="home" class="container">
         <div class="bg-div">
             <img src="img/potpae.jpg" alt="" class="bg-img">
         </div>
         <div class="greetingBox">
             <p class="greeting">
                 Hello,<br>
-                I'm smaivnn.
+                I'm Sungmin Choi.
             </p>
             <p class="introduce">
                 Kangwon UNIV, computer science.
             </p>
         </div>
         <div class="contactBox">
-            <a href="#" class="contactBtn">CONTACT ME</a>   
+            <a href="#contact" class="contactBtn">CONTACT ME</a>   
         </div>
     </header>
 
     <section class="container">
-        <article class="container about">
+        <article id="about" class="container about">
             <div class="title">
                 <h1>About me</h1>
             </div>
@@ -53,7 +53,7 @@
                 <p>
                     Name : 최성민(smaivnn)<br>
                     age : 1998.03.21 (23)<br><br>
-                    안녕하세요 강원대학교 컴퓨터 공학과 2학년 재학 중인 최성민입니다.<br>
+                    안녕하세요. 강원대학교 컴퓨터 공학과 2학년 재학 중인 최성민입니다.<br>
                     웹 개발 분야에 흥미가 있어 공부 중에 있습니다.<br>
                     아직 실력으로도 많이 부족하고 넣을 게 없는 포트폴리오이지만<br>
                     차근차근 채워 넣으며 발전하는 모습 보이겠습니다.
@@ -66,57 +66,57 @@
             </div>
         </article>
 
-        <article class="container skills">
+        <article id="skills" class="container skills">
             <div class="title">
                 <h1>
                     Skills
                 </h1>
-                <p>baby, user, expert</p>
+                <div class="lvBox">
+                    <span class="allBtn">All</span>
+                    <span class="babyBtn">Baby</span>
+                    <span class="userBtn">User</span>
+                    <span class="expertBtn">Expert</span>
+                </div>
             </div>
             
             <div class="skills-body">
                 <div class="skillsBox frontEnd">
                     <h2>Front-End</h2>
-                    <div class="skillsContent">
-                        <i class="fab fa-html5 fa-5x"></i>
+                    <div class="skillsContent user">
+                        <i class="fab fa-html5 fa-5x" style="color: #e34c26;"></i>
                         <p class="skillName">HTML5</p>
-                        <p class="skillLv">user</p>
                     </div>
                     
-                    <div class="skillsContent">
-                        <i class="fab fa-css3 fa-5x"></i>
+                    <div class="skillsContent user">
+                        <i class="fab fa-css3 fa-5x" style="color: #264de4"></i>
                         <p class="skillName">CSS3</p>
-                        <p class="skillLv">user</p>
                     </div>
         
-                    <div class="skillsContent">
-                        <i class="fab fa-js fa-5x"></i>
+                    <div class="skillsContent user">
+                        <i class="fab fa-js fa-5x" style="color: #f0db4f;"></i>
                         <p class="skillName">Javascript</p>
-                        <p class="skillLv">user</p>
                     </div>    
                 </div>
                 
                 <div class="skillsBox backEnd">
                     <h2>Back-End</h2>
-                    <div class="skillsContent">
-                        <i class="fab fa-node-js fa-5x"></i>
+                    <div class="skillsContent baby">
+                        <i class="fab fa-node-js fa-5x" style="color: #3c873a;"></i>
                         <p class="skillName">Node.js</p>
-                        <p class="skillLv">user</p>
                     </div>
         
-                    <div class="skillsContent">
-                        <i class="fab fa-python fa-5x"></i>
+                    <div class="skillsContent baby">
+                        <!-- <i class="fab fa-python fa-5x"></i> -->
+                        <img src="img/icon-python.png" alt="" style="height: 6em;">
                         <p class="skillName">Python</p>
-                        <p class="skillLv">user</p>
                     </div>
                 </div>
     
                 <div class="skillsBox versionCt">
                     <h2>Version Control</h2>
-                    <div class="skillsContent">
+                    <div class="skillsContent user">
                         <i class="fab fa-github fa-5x"></i>
                         <p class="skillName">Github</p>
-                        <p class="skillLv">user</p>
                     </div>
                 </div>
             </div>
@@ -124,19 +124,21 @@
             
 
         </article>
-        <article class="container works">
+        <article id="works" class="container works">
             <div class="title">
                 <h1>My works</h1>
             </div>
             <div class="works-body">
+
                 <div class="worksBox">
                     <img src="img/work/toDoList.PNG" alt="">
-                    <p>my first project toDoList</p>
+                    <p>toDoList</p>
                 </div>
+
             </div>
         </article>
     </section>
-    <footer class="container contact">
+    <footer id="contact" class="container contact">
         <div class="title">
             <h1>Contact</h1>
         </div>
@@ -144,5 +146,8 @@
 
         </div>
     </footer>
+
+
+    <script src="js/skillLv.js"></script>
 </body>
 </html>
