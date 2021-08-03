@@ -52,18 +52,13 @@ nav .right {
     margin-top: 0.5em;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-nav a:visited, .left a:hover ,.left a:active{
+nav a, nav a:visited, .left a:hover ,.left a:active{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 nav .right a {
     padding: 0 0.5em;
-    color: rgb(255, 255, 255);
 }
 
 nav .right a:hover, .right a:active {
