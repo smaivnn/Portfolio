@@ -52,24 +52,21 @@ nav .right {
     margin-top: 0.5em;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited, .left a:hover ,.left a:active{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 nav .right a {
     padding: 0 0.5em;
     color: rgb(255, 255, 255);
-    text-decoration: none;
 }
 
-nav .right a:visited{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-
-nav .right a:hover {
-    color: rgb(200, 0, 0);
-    text-decoration: none;
-}
-
-nav .right a:active {
+nav .right a:hover, .right a:active {
     color: rgb(200, 0, 0);
     text-decoration: none;
 }
@@ -123,13 +120,13 @@ nav .right a:active {
     font-family: 'Staatliches', cursive;
 }
 
-section #about {
+#about {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 77px;
 }
 
-section #about .about-body {
+#about .about-body {
     line-height: 2em;
     font-family: 'Do Hyeon', sans-serif;
 }
@@ -229,3 +226,69 @@ section #about .about-body {
     border-radius: 5%;
 }
 
+#contact {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.contact-body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.contact-body .contBox {
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    border: 5px double;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.email {
+    color: #DB4437;
+}
+
+.phoneNum {
+    color: #128C7E;
+    background : linear-gradient(to right bottom, #25D366 70%,#128C7E, #075E54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instagram {
+    color: #E1306C;
+    background: linear-gradient( to left bottom, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook {
+    color: #4267B2;
+}
+
+.github {
+    color: #333;
+}
+
+.tistory {
+    color: #D93D04;
+}
+
+.contBox div {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contBox .contLogo {
+    float: left;
+    margin-left: 10px;
+}
+
+.contBox .contName {
+    margin-top: 35px;
+    font-size: 30px;
+}
