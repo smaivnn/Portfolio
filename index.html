@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <!-- NAV -->
     <nav>
         <div class="navBox">
             <div class="left tab">
@@ -26,6 +26,7 @@
         </div>
     </nav>
 
+    <!-- HOME -->
     <header id="home" class="container">
         <div class="bg-div">
             <img src="img/potpae.jpg" alt="" class="bg-img">
@@ -43,7 +44,7 @@
             <a href="#contact" class="contactBtn">CONTACT ME</a>   
         </div>
     </header>
-
+    <!-- ABOUT -->
     <section class="container">
         <article id="about" class="container about">
             <div class="title">
@@ -65,7 +66,7 @@
                 </p>
             </div>
         </article>
-
+        <!-- SKILLS -->
         <article id="skills" class="container skills">
             <div class="title">
                 <h1>
@@ -121,23 +122,28 @@
                 </div>
             </div>
             
-            
-
         </article>
+
+        <!-- WORKS -->
         <article id="works" class="container works">
             <div class="title">
                 <h1>My works</h1>
             </div>
             <div class="works-body">
 
-                <div class="worksBox">
+                <div class="worksBox toDoList">
                     <img src="img/work/toDoList.PNG" alt="">
-                    <p>toDoList</p>
+                    <p class="workTitle">toDoList</p>
+                    <p>일정 관리를 위한 toDoList입니다.</p>
+                    <p>HTML5 + CSS3 + Javascritp</p>
                 </div>
-
+                
             </div>
         </article>
     </section>
+
+
+    <!-- CONTACT -->
     <footer id="contact" class="container contact">
         <div class="title">
             <h1>Contact</h1>
@@ -203,6 +209,7 @@
 
 
     <script src="js/skillLv.js"></script>
+    <script src="js/works.js"></script>
     <script src="js/contact.js"></script>
 </body>
 </html>

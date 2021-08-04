@@ -1,3 +1,5 @@
+@import url(font.css);
+
 html {
     scroll-behavior: smooth;
 }
@@ -195,6 +197,7 @@ nav .right a:hover, .right a:active {
 
 #works {
     background-color: #CDD5D3;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 #works .works-body {
@@ -210,15 +213,28 @@ nav .right a:hover, .right a:active {
     width: 18em;
     padding: 10px;
     border: 1px solid #98A6A6;
+    background-color: #dfdfdf;
     display: block;
     border-radius: 5%;
     margin: 0 0 2em 0;
     box-shadow: 5px 5px 5px #6B7275;
+    cursor: pointer;
 }
 
 .works-body .worksBox img {
     width: 100%;
     border-radius: 5%;
+}
+
+.worksBox p {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.worksBox .workTitle {
+    margin: 20px 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #000;
 }
 
 #contact {
